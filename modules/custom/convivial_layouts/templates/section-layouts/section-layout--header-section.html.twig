@@ -23,8 +23,8 @@
 %}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="container">
-      <div class="row">
+    <div class="hero-banner__container">
+      <div class="hero-banner__wrapper">
         {% if content.breadcrumbs|render is not empty or content.content|render is not empty or content.banner_title|render is not empty or content.title|render is not empty %}
           <div class="hero-banner__content">
             {% if content.breadcrumbs|render is not empty %}
