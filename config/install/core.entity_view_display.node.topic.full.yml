@@ -229,11 +229,13 @@ third_party_settings:
               context_mapping: {  }
               follow: true
               follow_parent: active
+              label_link: false
+              label_type: block
               level: 2
               depth: 0
+              expand_all_items: true
               parent: 'main:'
               suggestion: main
-              expand: false
             weight: 1
             additional: {  }
           8b394a05-7ced-4306-b3c4-41f547837f70:
