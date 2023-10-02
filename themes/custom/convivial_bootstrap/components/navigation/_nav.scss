@@ -3,3 +3,83 @@
 .nested-nav {
   list-style: none;
 }
+
+// Sidebar nav.
+.layout__region--sidebar {
+  .nav {
+    .nav-link.active {
+      color: var(--standard-dark);
+    }
+
+    .btn-group {
+      flex-wrap: wrap;
+
+      > a:first-child {
+        background-color: $link-color;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        color: var(--standard-light);
+        flex-grow: 1;
+
+        &:hover,
+        &:focus {
+          background-color: var(--standard-dark);
+          color: var(--standard-light);
+        }
+
+        &.active {
+          background-color: var(--standard-dark);
+          color: var(--standard-light);
+        }
+      }
+
+      .dropdown-toggle {
+        position: relative;
+        background-color: $link-color;
+        width: 1.75rem;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          border-bottom-color: var(--standard-light);
+          border-top-color: var(--standard-light);
+        }
+
+        &:hover,
+        &:focus {
+          background-color: var(--standard-dark);
+          color: var(--standard-light);
+
+          &::after {
+            background-color: var(--standard-dark);
+          }
+        }
+      }
+
+      a.active + .dropdown-toggle {
+        background-color: var(--standard-dark);
+      }
+
+      .nested-nav {
+        position: relative !important; // Override JS inline style.
+        background-color: transparent;
+        border: unset;
+        padding-left: 2rem;
+        transform: unset !important; // Override JS inline style.
+      }
+
+      + .is-active {
+        margin-top: .5rem;
+      }
+    }
+
+    .is-active + .btn-group {
+      margin-top: .5rem;
+    }
+  }
+}
