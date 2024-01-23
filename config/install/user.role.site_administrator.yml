@@ -44,6 +44,7 @@ dependencies:
     - field_ui
     - file
     - filter
+    - help
     - image
     - layout_builder
     - layout_builder_iframe_modal
@@ -87,6 +88,7 @@ permissions:
   - 'access convivial administration pages'
   - 'access environment indicator'
   - 'access files overview'
+  - 'access help pages'
   - 'access media overview'
   - 'access own webform configuration'
   - 'access shortcuts'
