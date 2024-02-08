@@ -41,6 +41,7 @@ dependencies:
     - layout_builder
     - layout_library
     - options
+    - recombee
     - system
     - text
     - user
@@ -339,6 +340,32 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: convivial_onecol
+        layout_settings:
+          context_mapping: {  }
+          arrangement: null
+          containment: 'edgy edgy--contained'
+          color: ''
+          styles: {  }
+        components:
+          1aefb287-d9eb-4f71-bfe6-8ca4dcddb54d:
+            uuid: 1aefb287-d9eb-4f71-bfe6-8ca4dcddb54d
+            region: content
+            configuration:
+              id: recombee_public_scenario
+              label: 'More like this'
+              label_display: '0'
+              provider: recombee
+              context_mapping: {  }
+              endpoint: items-to-item
+              scenario: item_items_similar
+              template: recombee_cards_quarters
+              page_size: '4'
+              tracking: false
+            weight: 0
             additional: {  }
         third_party_settings: {  }
   layout_library:

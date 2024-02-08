@@ -6,7 +6,7 @@ dependencies:
 id: convivial_bootstrap_pagetitle
 theme: convivial_bootstrap
 region: content_top
-weight: -3
+weight: -21
 provider: null
 plugin: page_title_block
 settings:
