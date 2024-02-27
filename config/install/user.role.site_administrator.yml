@@ -66,7 +66,6 @@ dependencies:
     - seckit
     - shortcut
     - simple_sitemap
-    - sitemap
     - system
     - taxonomy
     - toolbar
@@ -94,7 +93,6 @@ permissions:
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access site reports'
-  - 'access sitemap'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
@@ -149,7 +147,6 @@ permissions:
   - 'administer seckit'
   - 'administer shortcuts'
   - 'administer site configuration'
-  - 'administer sitemap'
   - 'administer sitemap settings'
   - 'administer software updates'
   - 'administer taxonomy'

@@ -93,7 +93,6 @@ install:
   - sendgrid_integration
   - shortcut
   - simple_sitemap
-  - sitemap
   - seckit
   - smart_trim
   - syslog
