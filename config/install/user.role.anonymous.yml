@@ -5,7 +5,6 @@ dependencies:
     - eu_cookie_compliance
     - media
     - paragraphs_type_permissions
-    - sitemap
     - system
 id: anonymous
 label: 'Anonymous user'
@@ -13,7 +12,6 @@ weight: -10
 is_admin: false
 permissions:
   - 'access content'
-  - 'access sitemap'
   - 'display eu cookie compliance popup'
   - 'view media'
   - 'view paragraph content accordion'
