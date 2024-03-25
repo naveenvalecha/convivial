@@ -15,4 +15,5 @@ themes/custom/**/assets/bootstrap
 
 # Cypress folders
 cypress.env.json
-/tests/cypress/cypress/videos/
+cypress/downloads
+tests/cypress/cypress/screenshots/

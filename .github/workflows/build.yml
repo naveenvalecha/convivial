@@ -171,5 +171,23 @@ jobs:
           npm install
           npm list
 
-      - name: Run Cypress Tests
-        run: npx cypress run
+      - name: Temporary Workaround - Uninstall Recombee module
+        run: drush pmu -y recombee
+
+      - name: Setup Convivial content - Umami
+        run: drush convivial_content-import umami --cleanup=1 --yes
+
+      - name: Run Cypress Tests - Umami
+        run: npx cypress run --spec cypress/e2e/convivial_content/umami.js
+
+      - name: Setup Convivial content - News
+        run: drush convivial_content-import news --cleanup=1 --yes
+
+      - name: Run Cypress Tests - News
+        run: npx cypress run --spec cypress/e2e/convivial_content/news.js
+
+      - name: Setup Convivial content - Bookshop
+        run: drush convivial_content-import bookshop --cleanup=1 --yes
+
+      - name: Run Cypress Tests - Bookshop
+        run: npx cypress run --spec cypress/e2e/convivial_content/bookshop.js
