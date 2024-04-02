@@ -33,3 +33,12 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   // we still want to ensure there are no other unexpected
   // errors, so we let them fail the test
 })
+
+// Login to Convivial as admin.
+beforeEach("Login", () => {
+  // Login Url.
+  cy.visit(Cypress.env('loginUrl'))
+  cy.get('input[id="edit-name"]').type(Cypress.config().adminUser)
+  cy.get('input[id="edit-pass"]').type(Cypress.config().adminPassword)
+  cy.get('input[id="edit-submit"]').click()
+})
