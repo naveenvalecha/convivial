@@ -2,7 +2,6 @@
 
 namespace Drupal\Tests\dtt\ExistingSite;
 
-use Drupal\Core\Config\ImmutableConfig;
 use weitzman\DrupalTestTraits\ExistingSiteBase;
 
 /**
