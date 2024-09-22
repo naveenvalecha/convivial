@@ -2,10 +2,7 @@
 
 namespace Drupal\Tests\dtt\ExistingSite;
 
-use Drupal\Component\Serialization\Yaml;
 use Drupal\Core\Config\ImmutableConfig;
-use Drupal\node\Entity\NodeType;
-use Drupal\taxonomy\Entity\Vocabulary;
 use weitzman\DrupalTestTraits\ExistingSiteBase;
 
 /**
@@ -59,20 +56,6 @@ class InstallStateTest extends ExistingSiteBase {
       $status_code = $session->getStatusCode();
       $this->assertSame(200, $status_code, "$path returned status code $status_code.");
     }
-  }
-
-  /**
-   * Returns a config object by name.
-   *
-   * @param string $name
-   *   The name of the config object to return.
-   *
-   * @return \Drupal\Core\Config\ImmutableConfig
-   *   The config object, read-only to discourage this test from making any
-   *   changes.
-   */
-  private function config(string $name): ImmutableConfig {
-    return $this->container->get('config.factory')->get($name);
   }
 
   /**
