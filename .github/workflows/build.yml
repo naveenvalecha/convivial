@@ -161,9 +161,7 @@ jobs:
 
       - name: Run Drupal Test Traits
         run: |
-          ls -alk
-          ls -alk ./bin
-          ls -alk ./vendor
+          ./bin/phpunit --bootstrap=./vendor/weitzman/drupal-test-traits/src/bootstrap-fast.php tests/
 
       - name: Setup node
         uses: actions/setup-node@v4
