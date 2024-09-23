@@ -118,9 +118,8 @@ jobs:
           echo "$GITHUB_WORKSPACE/vendor/bin" >> $GITHUB_PATH
           echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
           ls -alk
-          ls -alk modules/
-          ls -alk test/
-          ls -alk /app
+          ls -alk modules/custom
+          ls -alk tests/
 
       - name: Validate composer
         run: composer validate --no-check-all --ansi
@@ -165,7 +164,8 @@ jobs:
 
       - name: Run Drupal Test Traits
         run: |
-          ./bin/phpunit --bootstrap=./vendor/weitzman/drupal-test-traits/src/bootstrap-fast.php tests/
+          which phpunit
+          phpunit
 
       - name: Setup node
         uses: actions/setup-node@v4
