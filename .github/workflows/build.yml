@@ -118,7 +118,8 @@ jobs:
           echo "$GITHUB_WORKSPACE/vendor/bin" >> $GITHUB_PATH
           echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
           ls -alk
-          ls -alk web/
+          ls -alk modules/
+          ls -alk test/
           ls -alk /app
 
       - name: Validate composer
