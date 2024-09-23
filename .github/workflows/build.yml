@@ -161,6 +161,7 @@ jobs:
 
       - name: Run Drupal Test Traits
         run: |
+          pwd
           ls -alk
           ls -alk tests
           phpunit
