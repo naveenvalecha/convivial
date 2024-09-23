@@ -117,6 +117,9 @@ jobs:
         run: |
           echo "$GITHUB_WORKSPACE/vendor/bin" >> $GITHUB_PATH
           echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
+          ls -alk
+          ls -alk web/
+          ls -alk /app
 
       - name: Validate composer
         run: composer validate --no-check-all --ansi
