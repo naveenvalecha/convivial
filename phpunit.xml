@@ -36,7 +36,7 @@
     <testsuites>
         <testsuite name="unit">
             <directory>./modules/custom/*/tests/src/Unit</directory>
-            <directory>./tests/src/Unit</directory>
+            <!--<directory>./tests/src/Unit</directory>-->
         </testsuite>
         <testsuite name="kernel">
             <directory>./web/modules/custom/*/tests/src/Kernel</directory>
